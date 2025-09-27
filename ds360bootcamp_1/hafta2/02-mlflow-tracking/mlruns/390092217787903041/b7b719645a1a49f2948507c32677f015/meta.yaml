@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/yaseminarslan/Desktop/ds360/ds360/02-mlflow-tracking/mlruns/390092217787903041/b7b719645a1a49f2948507c32677f015/artifacts
+end_time: 1758232844264
+entry_point_name: ''
+experiment_id: '390092217787903041'
+lifecycle_stage: active
+run_id: b7b719645a1a49f2948507c32677f015
+run_name: merciful-dog-471
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758232842212
+status: 3
+tags: []
+user_id: yaseminarslan

@@ -1,0 +1,22 @@
+artifact_path: file:///Users/yaseminarslan/Desktop/ds360/ds360/02-mlflow-tracking/mlruns/390092217787903041/models/m-ac38835d801a4188a5afadc6d6d61eb5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.4.0
+model_id: m-ac38835d801a4188a5afadc6d6d61eb5
+model_size_bytes: 831
+model_uuid: m-ac38835d801a4188a5afadc6d6d61eb5
+prompts: null
+run_id: b7b719645a1a49f2948507c32677f015
+utc_time_created: '2025-09-18 22:00:42.247859'

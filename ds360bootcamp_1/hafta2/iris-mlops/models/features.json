@@ -1,0 +1,12 @@
+[
+  "pclass",
+  "sex_encoded",
+  "age",
+  "sibsp",
+  "parch",
+  "fare",
+  "embarked_encoded",
+  "family_size",
+  "is_alone",
+  "age_group_encoded"
+]

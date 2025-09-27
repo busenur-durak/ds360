@@ -1,0 +1,33 @@
+stages:
+  download_data:
+    cmd: python hafta2/titanic-mlops/src/download_data.py
+    deps:
+      - hafta2/titanic-mlops/src/download_data.py
+    outs:
+      - hafta2/titanic-mlops/data/iris.csv
+
+  clean_data:
+    cmd: python hafta2/titanic-mlops/src/clean_data.py
+    deps:
+      - hafta2/titanic-mlops/src/clean_data.py
+      - hafta2/titanic-mlops/data/iris.csv
+    outs:
+      - hafta2/titanic-mlops/data/iris_clean.csv
+
+  train_model:
+    cmd: python hafta2/titanic-mlops/src/train_model.py
+    deps:
+      - hafta2/titanic-mlops/src/train_model.py
+      - hafta2/titanic-mlops/data/iris_clean.csv
+    outs:
+      - hafta2/titanic-mlops/models/random_forest_model.pkl
+      - hafta2/titanic-mlops/models/logistic_regression_model.pkl
+      - hafta2/titanic-mlops/models/features.json
+    metrics:
+      - hafta2/titanic-mlops/models/metrics.json
+
+  train_model_mlflow:
+    cmd: python hafta2/titanic-mlops/src/train_model_mlflow.py
+    deps:
+      - hafta2/titanic-mlops/src/train_model_mlflow.py
+      - hafta2/titanic-mlops/data/iris_clean.csv
