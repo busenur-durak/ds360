@@ -1,0 +1,54 @@
+{
+  "method": "Time Series CV (Rolling-Origin)",
+  "validation_horizon": 28,
+  "n_folds": 3,
+  "timestamp": "2025-10-12T02:01:27.252709",
+  "why_not_shuffle": [
+    "Temporal Leakage: Gelecek verisi ile ge\u00e7mi\u015f tahmin edilir",
+    "Pattern Bozukluk: Zaman ba\u011f\u0131ml\u0131 pattern'ler par\u00e7alan\u0131r",
+    "Ger\u00e7ek\u00e7i Olmama: Production'da shuffle yok, sadece ge\u00e7mi\u015f var"
+  ],
+  "summary_metrics": {
+    "MAE": {
+      "mean": 8.914289039059787,
+      "std": 0.7251579119212566
+    },
+    "RMSE": {
+      "mean": 13.441379822610095,
+      "std": 1.1179363128051698
+    },
+    "sMAPE": {
+      "mean": 33.82805292433313,
+      "std": 5.732993353091684
+    }
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "metrics": {
+        "MAE": 9.486369628157608,
+        "RMSE": 12.801199985487179,
+        "sMAPE": 33.475874531317544
+      },
+      "best_iteration": 131
+    },
+    {
+      "fold": 1,
+      "metrics": {
+        "MAE": 7.891143700764658,
+        "RMSE": 12.509551320770852,
+        "sMAPE": 41.018969058443155
+      },
+      "best_iteration": 94
+    },
+    {
+      "fold": 2,
+      "metrics": {
+        "MAE": 9.365353788257092,
+        "RMSE": 15.013388161572253,
+        "sMAPE": 26.989315183238695
+      },
+      "best_iteration": 113
+    }
+  ]
+}
